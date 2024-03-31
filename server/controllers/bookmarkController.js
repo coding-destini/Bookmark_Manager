@@ -36,10 +36,10 @@ exports.createBookmark = async (req, res) => {
 
       const bookmark = await Bookmark.create({ name, link, cleanedLink });
   
-      res.status(201).json(bookmark);
+     return res.status(201).json(bookmark);
     } catch (error) {
       console.error("Error creating bookmark:", error);
-      res.status(500).json({ message: "Server Error" });
+     return res.status(500).json({ message: "Server Error" });
     }
   };
 
@@ -49,9 +49,9 @@ exports.getbookmark = async (req, res) => {
   try {
     // Fetch all bookmarks from the database
     const bookmarks = await Bookmark.find();
-    res.status(200).json(bookmarks);
+   return res.status(200).json(bookmarks);
   } catch (error) {
     console.error('Error fetching bookmarks:', error);
-    res.status(500).json({ message: 'Internal server error' });
+    return res.status(500).json({ message: 'Internal server error' });
   }
 };
