@@ -1,0 +1,48 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="popup.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+  <title>Add Bookmark</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h3>Add Bookmark</h3>
+      <form id="bookmarkForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="link">Link:</label>
+        <input type="text" id="link" name="link" required><br>
+        <button type="submit">Add Bookmark</button>
+      </form>
+    </div>
+    <div class="bookmark-list">
+      <h3>Bookmark List</h3>
+      <ul id="bookmarkList"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

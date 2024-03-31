@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "My Chrome Extension",
+    "version": "1.0",
+    "description": "Description of your extension",
+    "permissions": [
+      "activeTab",
+      "http://localhost:4000/api/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon":"./asset 0.png"
+    }
+  }
+  
