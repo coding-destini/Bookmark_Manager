@@ -1,6 +1,6 @@
 async function fetchBookmarks() {
     try {
-        const response = await fetch('http://localhost:4000/api/getbookmark');
+        const response = await fetch('http://bookmark-zeta-flame.vercel.app/api/getbookmark');
         const bookmarks = await response.json();
         const bookmarkList = document.getElementById('bookmarkList');
         bookmarkList.innerHTML = ''; // Clear existing list
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const link = document.getElementById('link').value;
 
         try {
-            const response = await fetch('http://localhost:4000/api/bookmarks', {
+            const response = await fetch('https://bookmark-zeta-flame.vercel.app/api/bookmarks', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
