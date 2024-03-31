@@ -7,6 +7,10 @@ const HeroBanner = () => {
     const handleShow = () => {
       setOpen(true);
     };
+
+    const handleDownloadClick = () => {
+        window.location.href = 'https://drive.google.com/file/d/1XXPz1qvmUgZguHP7A5UqwAMquIjQm59j/view?usp=sharing';
+      };
     
     return (
         <div className='mt-5'>
@@ -53,7 +57,7 @@ const HeroBanner = () => {
                         id="buttons-container"
                         className="mt-10 flex gap-4 flex-col sm:flex-row"
                     >
-                        <button className="px-8 py-3 font-semibold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">
+                        <button onClick={handleDownloadClick} className="px-8 py-3 font-semibold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">
                             Download Extension
                         </button>
                         <button   onClick={() => handleShow()} className="px-8 py-3 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800">

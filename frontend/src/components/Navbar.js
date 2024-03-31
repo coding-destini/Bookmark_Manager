@@ -21,28 +21,17 @@ const Navbar = () => {
       </a>
       <div id="nav-menu" className="hidden lg:flex gap-12">
         <a href="#" className="font-medium hover:text-primary">
-          Pricing
-        </a>
-        <a href="#" className="font-medium hover:text-primary">
-          Docs
-        </a>
-        <a href="#" className="font-medium hover:text-primary">
-          Changelog
-        </a>
-        <a href="#" className="font-medium hover:text-primary">
-          Blogs
-        </a>
-        <a href="#" className="font-medium hover:text-primary">
-          Login
+          Upcoming Features
         </a>
       </div>
       <div className="hidden lg:flex flex-1 justify-end">
-        <button className="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
-          <img src={logo} alt="" />
-          <span className="font-display font-medium">Best Developers</span>
-          <i className="fa-solid fa-arrow-right" />
-        </button>
-      </div>
+  <a href="https://github.com/coding-destini/Bookmark_Manager" className="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+    <img src={logo} alt="" />
+    <span className="font-display font-medium">Contribute Now Developers</span>
+    <i className="fa-solid fa-arrow-right" />
+  </a>
+</div>
+
       {/* Toggle button for mobile */}
       <button
         className="p-2 lg:hidden"
