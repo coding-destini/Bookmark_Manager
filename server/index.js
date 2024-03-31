@@ -14,7 +14,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(require('./routes/bookmarkRoutes'))
+app.use(require('./routes/index'))
 
 
 app.listen(PORT,(err)=>{
