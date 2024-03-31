@@ -89,7 +89,7 @@ The project consists of two main components:
 
 5. The extension should now be installed and accessible from the Chrome toolbar.
 
-6.You can download the zip direct from here : https://drive.google.com/file/d/1Te8N5v2Qemfaj6mfespAwdpHKBOR-73s/view?usp=sharing 
+6.You can download the extension zip direct from here : https://drive.google.com/file/d/1XXPz1qvmUgZguHP7A5UqwAMquIjQm59j/view?usp=sharing
 
 ## Screenshots
 
