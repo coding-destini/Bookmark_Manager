@@ -11,7 +11,7 @@ const BookmarkForm = ({ onAddBookmark }) => {
     if (!name || !link) return;
   
     try {
-      const response = await axios.post('http://localhost:4000/api/bookmarks', { name, link });
+      const response = await axios.post('https://bookmark-zeta-flame.vercel.app/api/bookmarks', { name, link });
       if (response.status === 201) {
         onAddBookmark({ name, link });
         setName('');

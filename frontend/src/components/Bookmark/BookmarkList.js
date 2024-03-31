@@ -9,7 +9,7 @@ const BookmarkList = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:4000/api/getbookmark');
+                const response = await axios.get('http://bookmark-zeta-flame.vercel.app/api/getbookmark');
                 const modifiedData = response.data.map(bookmark => ({
                     ...bookmark,
                     imageUrl: bookmark.link.includes('mail.google.com')
