@@ -8,8 +8,8 @@
     ],
     "routes": [
       {
-        "src": "/routes/bookmark.js",
-        "dest": "/routes/bookmark.js"
+        "src": "/routes/bookmarkRoutes.js",
+        "dest": "/routes/bookmarkRoutes.js"
       }
     ]
 }
